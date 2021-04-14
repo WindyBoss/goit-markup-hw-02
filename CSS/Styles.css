@@ -84,8 +84,8 @@ body {
   color: var(--accent-text-color);
 }
 
-.kontakt-info .link:hover,
-.kontakt-info .link:focus {
+.contact-info.link:hover,
+.contact-info.link:focus {
   color: var(--accent-text-color);
 }
 .site-nav .link.current {
