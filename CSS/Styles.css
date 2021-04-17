@@ -7,6 +7,8 @@
   --button-blue-color: #2196f3;
   --section-bg-color: #2f303a;
   --second-section-background: #f5f4fa;
+  --main-font: Roboto;
+  --logo-font: Raleway;
 }
 
 /* Page colors */
@@ -20,30 +22,26 @@
 /* Worker section backgroung color #F5F4FA */
 /* Footer kontakt text color rgba(255, 255, 255, 0.6) */
 
+/* Body */
 body {
   background-color: var(--primary-bg-color);
+
+  font-family: var(--main-font), sans-serif;
+  letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 
-/* Header */
-
+/* Elements */
 .header {
-  position: absolute;
-  width: 1600px;
-  height: 80px;
-  left: 0px;
-  top: 0px;
-
   color: var(--primary-white-color);
 }
 
 .logo {
-  font-family: Raleway;
-  font-style: normal;
+  font-family: var(--logo-font), sans-serif;
   font-weight: bold;
   font-size: 26px;
-  line-height: 31px;
-  letter-spacing: 0.03em;
+  line-height: 1.2;
+
   text-decoration: none;
 
   color: var(--accent-text-color);
@@ -52,29 +50,34 @@ body {
   color: var(--title-text-color);
 }
 
-.header .logo {
-  position: absolute;
-  width: 145px;
-  height: 31px;
-  left: 215px;
-  top: 24px;
-}
-
 .list {
   list-style: none;
 }
 
-/* Site Nav */
-
 .link {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
 }
+
+.container {
+  background: var(--primary-white-color);
+}
+
+.name {
+  font-weight: 500;
+
+  color: var(--title-text-color);
+}
+
+.title {
+  font-weight: bold;
+  color: var(--title-text-color);
+}
+
+/* Site Nav */
 .site-nav .link {
   color: var(--title-text-color);
 }
@@ -92,612 +95,109 @@ body {
   color: var(--accent-text-color);
 }
 
-.left {
-  position: absolute;
-  width: 53px;
-  height: 16px;
-  left: 453px;
-  top: 32px;
-}
-
-.middle {
-  position: absolute;
-  width: 58px;
-  height: 16px;
-  left: 552px;
-  top: 32px;
-}
-
-.right {
-  position: absolute;
-  width: 51px;
-  height: 16px;
-  left: 674px;
-  top: 32px;
-}
-
-/* Contacts */
-
-.header .mail {
-  position: absolute;
-  width: 135px;
-  height: 16px;
-  left: 1078px;
-  top: 32px;
-
-  color: var(--title-text-color);
-}
-
-.header .phone {
-  position: absolute;
-  width: 110px;
-  height: 16px;
-  left: 1263px;
-  top: 32px;
-
-  color: var(--primary-text-color);
-}
-
 /* Hero */
 .hero {
-  position: absolute;
-  width: 1600px;
-  height: 600px;
-  left: 0px;
-  top: 80px;
-
   background: var(--section-bg-color);
 }
-.hero-title {
-  position: absolute;
-  width: 696px;
-  height: 120px;
-  left: 452px;
-  top: 200px;
 
-  font-family: Roboto;
-  font-style: normal;
+/* Titles */
+.hero-title {
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
-  /* or 136% */
+  line-height: 1.36;
 
   text-align: center;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
 
   color: var(--button-primary-color);
 }
-.hero-button {
-  position: absolute;
-  width: 200px;
-  height: 50px;
-  left: 700px;
-  top: 350px;
 
-  font-family: Roboto;
-  font-style: normal;
+.feature .title {
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.work-image .title {
+  font-size: 36px;
+  line-height: 1.2;
+
+  text-align: center;
+}
+
+.container .title {
+  font-size: 18px;
+  line-height: 2;
+
+  letter-spacing: 0.06em;
+}
+
+.worker-title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+/* buttons */
+.hero-button {
+  font-family: inherit;
   font-weight: bold;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
 
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-}
-
-/* Feature */
-.feature-list .title {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  color: var(--title-text-color);
-}
-
-.feature-list .description {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-
-  letter-spacing: 0.03em;
-}
-
-/* <Feature-Left> */
-.feature-list .feature-left {
-  position: absolute;
-  width: 270px;
-  height: 101px;
-  left: 215px;
-  top: 774px;
-}
-
-.feature-list .title.left {
-  position: absolute;
-  width: 270px;
-  height: 16px;
-  left: 0px;
-  top: 0px;
-}
-
-.feature-list .description.left {
-  position: absolute;
-  width: 270px;
-  height: 75px;
-  left: 0px;
-  top: 26px;
-}
-
-/* <Feature-middle-left> */
-.feature-list .feature-middle-left {
-  position: absolute;
-  width: 270px;
-  height: 101px;
-  left: 515px;
-  top: 774px;
-}
-.feature-list .title.middle-left {
-  position: absolute;
-  width: 270px;
-  height: 16px;
-  left: 0px;
-  top: 0px;
-}
-
-.feature-list .description.middle-left {
-  position: absolute;
-  width: 270px;
-  height: 75px;
-  left: 0px;
-  top: 26px;
-}
-
-/* <Feature-middle-right> */
-.feature-list .feature-middle-right {
-  position: absolute;
-  width: 270px;
-  height: 101px;
-  left: 815px;
-  top: 774px;
-}
-.feature-list .title.middle-right {
-  position: absolute;
-  width: 270px;
-  height: 16px;
-  left: 0px;
-  top: 0px;
-}
-
-.feature-list .description.middle-right {
-  position: absolute;
-  width: 270px;
-  height: 75px;
-  left: 0px;
-  top: 26px;
-}
-
-/* <Feature-right> */
-.feature-list .feature-right {
-  position: absolute;
-  width: 270px;
-  height: 101px;
-  left: 1115px;
-  top: 774px;
-}
-.feature-list .title.right {
-  position: absolute;
-  width: 270px;
-  height: 16px;
-  left: 0px;
-  top: 0px;
-}
-
-.feature-list .description.right {
-  position: absolute;
-  width: 270px;
-  height: 75px;
-  left: 0px;
-  top: 26px;
-}
-
-/* button */
-.button {
-  color: var(--title-text-color);
-  background-color: var(--button-primary-color);
-}
-
-.button.primary {
   background-color: var(--button-blue-color);
   color: var(--primary-white-color);
 }
 
-.button.secondary {
+.filters .button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+
+  text-align: center;
+
   background-color: var(--second-section-background);
   color: var(--title-text-color);
 }
 
-/* Secondary Section */
-.section-title {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: var(--title-text-color);
+.button:hover,
+.button:focus {
+  background-color: var(--button-blue-color);
+  color: var(--primary-white-color);
+  cursor: pointer;
 }
 
-.secondary-section .section-title {
-  position: absolute;
-  height: 42px;
-  left: 624px;
-  top: 969px;
-}
-
-/* Secondary Section Pictures */
-
-.secondary-section .left-picture {
-  position: absolute;
-  width: 370px;
-  height: 294px;
-  left: 215px;
-  top: 1061px;
-}
-
-.secondary-section .middle-picture {
-  position: absolute;
-  width: 370px;
-  height: 294px;
-  left: 615px;
-  top: 1061px;
-}
-
-.secondary-section .right-picture {
-  position: absolute;
-  width: 370px;
-  height: 294px;
-  left: 1015px;
-  top: 1061px;
+/* Feature */
+.feature .description {
+  font-size: 14px;
+  line-height: 1.7;
 }
 
 /* Team Section */
 
-.worker-name {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
+.team .container {
   font-size: 16px;
-  line-height: 19px;
-
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: var(--title-text-color);
-}
-
-.team-section {
-  position: absolute;
-  width: 1600px;
-  height: 648px;
-  left: 0px;
-  top: 1449px;
-
-  background: var(--second-section-background);
-}
-
-.team-section .section-title {
-  position: absolute;
-  width: 210px;
-  height: 42px;
-  left: 695px;
-  top: 94px;
-}
-
-.team-section .left-div {
-  position: absolute;
-  width: 270px;
-  height: 368px;
-  left: 215px;
-  top: 186px;
-
-  background: var(--primary-white-color);
-}
-
-.team-section .left-middle-div {
-  position: absolute;
-  width: 270px;
-  height: 368px;
-  left: 515px;
-  top: 186px;
-
-  background: var(--primary-white-color);
-}
-
-.team-section .right-middle-div {
-  position: absolute;
-  width: 270px;
-  height: 368px;
-  left: 815px;
-  top: 186px;
-
-  background: var(--primary-white-color);
-}
-
-.team-section .right-div {
-  position: absolute;
-  width: 270px;
-  height: 368px;
-  left: 1115px;
-  top: 186px;
-
-  background: var(--primary-white-color);
-}
-
-.worker-position {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
-
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  text-align: center;
+  line-height: 1.2;
 }
 
 /* Footer */
 .footer {
-  position: absolute;
-  width: 1600px;
-  height: 252px;
-  left: 0px;
-  top: 2097px;
-
   background: var(--section-bg-color);
 }
-.footer .logo {
-  position: absolute;
-  width: 145px;
-  height: 31px;
-  left: 215px;
-  top: 60px;
+
+.footer .contact-info {
+  font-size: 14px;
+  line-height: 1.7;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .footer .address {
-  position: absolute;
-  width: 246px;
-  height: 21px;
-  left: 215px;
-  top: 111px;
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-
-  letter-spacing: 0.03em;
   color: var(--button-primary-color);
 }
 
-.footer .mail {
-  position: absolute;
-  width: 231px;
-  height: 21px;
-  left: 215px;
-  top: 141px;
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  text-decoration: none;
-
-  letter-spacing: 0.03em;
-
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.footer .phone {
-  position: absolute;
-  width: 231px;
-  height: 21px;
-  left: 215px;
-  top: 171px;
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  text-decoration: none;
-
-  letter-spacing: 0.03em;
-
-  color: rgba(255, 255, 255, 0.6);
-}
-
-/* Portfolio.HTML */
-
-/* Filters */
-
-.filters-section {
-  position: absolute;
-  width: 653px;
-  height: 54px;
-  left: 453px;
-  top: 174px;
-}
-
-.list-style {
-  list-style: none;
-}
-
-.filters-section .button {
-  border-radius: 4px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
-
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-
-.button.current {
-  background-color: var(--button-blue-color);
-  color: var(--primary-white-color);
-}
-
-.filters-section .left-filter {
-  position: absolute;
-  width: 115px;
-  height: 38px;
-  left: 0px;
-  top: 0px;
-
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-}
-
-.filters-section .middle-left-filter {
-  position: absolute;
-  width: 128px;
-  height: 38px;
-  left: 123px;
-  top: 0px;
-}
-
-.filters-section .middle-filter {
-  position: absolute;
-  width: 145px;
-  height: 38px;
-  left: 259px;
-  top: 0px;
-}
-
-.filters-section .middle-right-filter {
-  position: absolute;
-  width: 103px;
-  height: 38px;
-  left: 412px;
-  top: 0px;
-}
-
-.filters-section .right-filter {
-  position: absolute;
-  width: 130px;
-  height: 38px;
-  left: 523px;
-  top: 0px;
-}
-
 /* Portfolio Section */
-
-.container-parameter {
-  position: absolute;
-  width: 370px;
-  height: 404px;
-
-  background: var(--primary-white-color);
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
-}
-
-.container-title {
-  position: absolute;
-  width: 322px;
-  height: 36px;
-  left: 24px;
-  top: 314px;
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 36px;
-
-  letter-spacing: 0.06em;
-
-  color: var(--title-text-color);
-}
-
-.container-text {
-  position: absolute;
-  width: 322px;
-  height: 30px;
-  left: 24px;
-  top: 354px;
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
+.container .text {
   font-size: 16px;
-  line-height: 30px;
-
-  letter-spacing: 0.03em;
-
-  color: var(--primary-text-color);
-}
-
-.container-picture {
-  position: absolute;
-  width: 370px;
-  height: 294px;
-}
-
-.technocrack {
-  left: 215px;
-  top: 262px;
-}
-
-.new-orlan {
-  left: 615px;
-  top: 262px;
-}
-
-.seafood {
-  left: 1015px;
-  top: 262px;
-}
-
-.project-prime {
-  left: 215px;
-  top: 696px;
-}
-
-.project-boxes {
-  left: 615px;
-  top: 696px;
-}
-
-.inspiration {
-  left: 1015px;
-  top: 696px;
-}
-
-.magazine {
-  left: 215px;
-  top: 1130px;
-}
-
-.project-lab {
-  left: 615px;
-  top: 1130px;
-}
-
-.growing-business {
-  left: 1015px;
-  top: 1130px;
+  line-height: 1.8;
 }
